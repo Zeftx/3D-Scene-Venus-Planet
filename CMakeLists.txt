@@ -61,7 +61,7 @@ add_executable(playground
 	playground/SimpleVertexShader.vertexshader
 	common/shader.cpp
 	common/shader.hpp
-)
+ "playground/snake.cpp")
 target_link_libraries(playground
 	${ALL_LIBS}
 )

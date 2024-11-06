@@ -14,36 +14,6 @@ using namespace glm;
 
 #include <common/shader.hpp>
 
-int main( void )
-{
-  //Initialize window
-  bool windowInitialized = initializeWindow();
-  if (!windowInitialized) return -1;
-
-  //Initialize vertex buffer
-  bool vertexbufferInitialized = initializeVertexbuffer();
-  if (!vertexbufferInitialized) return -1;
-
-  // Create and compile our GLSL program from the shaders
-  programID = LoadShaders("SimpleVertexShader.vertexshader", "SimpleFragmentShader.fragmentshader");
-
-	//start animation loop until escape key is pressed
-	do{
-
-    updateAnimationLoop();
-
-	} // Check if the ESC key was pressed or the window was closed
-	while( glfwGetKey(window, GLFW_KEY_ESCAPE ) != GLFW_PRESS &&
-		   glfwWindowShouldClose(window) == 0 );
-
-	
-  //Cleanup and close window
-  cleanupVertexbuffer();
-  glDeleteProgram(programID);
-	closeWindow();
-  
-	return 0;
-}
 
 void updateAnimationLoop()
 {
