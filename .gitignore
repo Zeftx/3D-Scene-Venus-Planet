@@ -12,3 +12,6 @@ OpenGL-tutorial_v*
 **.mtl
 .DS_Store
 .vs/
+
+# Project exclude paths
+/cmake-build-debug/

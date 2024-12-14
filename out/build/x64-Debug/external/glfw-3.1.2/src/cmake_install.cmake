@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/Lenovo/OneDrive - thu.de/ComputerGraph/template/external/glfw-3.1.2/src
+# Install script for directory: C:/Users/Alper/source/repos/Mars_Model_CG/external/glfw-3.1.2/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Users/Lenovo/OneDrive - thu.de/ComputerGraph/template/out/install/x64-Debug")
+  set(CMAKE_INSTALL_PREFIX "C:/Users/Alper/Source/Repos/Mars_Model_CG/out/install/x64-Debug")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,10 +33,10 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "C:/Users/Lenovo/OneDrive - thu.de/ComputerGraph/template/out/build/x64-Debug/external/glfw-3.1.2/src/glfw3.lib")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "C:/Users/Alper/source/repos/Mars_Model_CG/out/build/x64-Debug/external/glfw-3.1.2/src/glfw3.lib")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("C:/Users/Lenovo/OneDrive - thu.de/ComputerGraph/template/out/build/x64-Debug/external/glfw-3.1.2/src/CMakeFiles/glfw.dir/install-cxx-module-bmi-Debug.cmake" OPTIONAL)
+  include("C:/Users/Alper/source/repos/Mars_Model_CG/out/build/x64-Debug/external/glfw-3.1.2/src/CMakeFiles/glfw.dir/install-cxx-module-bmi-Debug.cmake" OPTIONAL)
 endif()
 

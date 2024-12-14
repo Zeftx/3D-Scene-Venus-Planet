@@ -56,12 +56,19 @@ add_definitions(
 # User playground
 add_executable(playground 
 	playground/playground.cpp
-	playground/playground.h
-	playground/SimpleFragmentShader.fragmentshader
-	playground/SimpleVertexShader.vertexshader
+        playground/playground.hpp
+        resources/SimpleFragmentShader.fragmentshader
+        resources/SimpleVertexShader.vertexshader
 	common/shader.cpp
 	common/shader.hpp
- "playground/snake.cpp")
+        playground/RenderObject.cpp
+		common/objloader.cpp
+		common/controls.hpp
+		common/controls.cpp
+		common/texture.cpp
+        playground/Point.h
+		playground/Triangle.h
+)
 target_link_libraries(playground
 	${ALL_LIBS}
 )

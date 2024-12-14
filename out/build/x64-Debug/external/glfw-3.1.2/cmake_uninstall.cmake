@@ -1,9 +1,9 @@
 
-if (NOT EXISTS "C:/Users/Lenovo/OneDrive - thu.de/ComputerGraph/template/out/build/x64-Debug/external/glfw-3.1.2/install_manifest.txt")
-  message(FATAL_ERROR "Cannot find install manifest: \"C:/Users/Lenovo/OneDrive - thu.de/ComputerGraph/template/out/build/x64-Debug/external/glfw-3.1.2/install_manifest.txt\"")
+if (NOT EXISTS "C:/Users/Alper/source/repos/Mars_Model_CG/out/build/x64-Debug/external/glfw-3.1.2/install_manifest.txt")
+  message(FATAL_ERROR "Cannot find install manifest: \"C:/Users/Alper/source/repos/Mars_Model_CG/out/build/x64-Debug/external/glfw-3.1.2/install_manifest.txt\"")
 endif()
 
-file(READ "C:/Users/Lenovo/OneDrive - thu.de/ComputerGraph/template/out/build/x64-Debug/external/glfw-3.1.2/install_manifest.txt" files)
+file(READ "C:/Users/Alper/source/repos/Mars_Model_CG/out/build/x64-Debug/external/glfw-3.1.2/install_manifest.txt" files)
 string(REGEX REPLACE "\n" ";" files "${files}")
 
 foreach (file ${files})
