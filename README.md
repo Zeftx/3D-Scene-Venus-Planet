@@ -16,7 +16,7 @@ The scene was developed step by step using OpenGL, based on tutorials from the o
 
 # Clone the repository to your local machine:
 
-git clone https://github.com/Zeftx/3D-Scene-Venus
+git clone https://github.com/Zeftx/3D-Scene-Venus-Planet
 run playground.cpp
 
 # Sources
