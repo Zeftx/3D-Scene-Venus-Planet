@@ -25,3 +25,6 @@ run playground.cpp
 - Planet: https://www.solarsystemscope.com/textures/
 - Video: https://www.youtube.com/watch?v=VS8wlS9hF8E&list=PLRIWtICgwaX0u7Rf9zkZhLoLuZVfUksDP
 
+
+![alt text](file:///I:/venus.png)
+
