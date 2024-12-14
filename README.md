@@ -1,4 +1,4 @@
-# 2D Snake Game with OpenGL
+# 3D Scene Venus Planet with OpenGL
 
 This is a 3D visualization project developed in C++ using OpenGL for a Computer Graphics course. 
 The project features a rotating 3D model of the planet Venus with textures and interactive camera controls. 
@@ -21,7 +21,7 @@ run playground.cpp
 
 # Sources
 
-OpenGL Tutorial: https://www.opengl-tutorial.org/
-Planet: https://www.solarsystemscope.com/textures/
-Video: https://www.youtube.com/watch?v=VS8wlS9hF8E&list=PLRIWtICgwaX0u7Rf9zkZhLoLuZVfUksDP
+- OpenGL Tutorial: https://www.opengl-tutorial.org/
+- Planet: https://www.solarsystemscope.com/textures/
+- Video: https://www.youtube.com/watch?v=VS8wlS9hF8E&list=PLRIWtICgwaX0u7Rf9zkZhLoLuZVfUksDP
 
