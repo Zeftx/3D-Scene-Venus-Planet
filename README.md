@@ -16,7 +16,7 @@ The scene was developed step by step using OpenGL, based on tutorials from the o
 
 # Clone the repository to your local machine:
 
-git clone https://github.com/Zeftx/3D-Scene-Venus
+git clone https://github.com/Zeftx/3D-Scene-Venus-Planet
 run playground.cpp
 
 # Sources
@@ -25,6 +25,5 @@ run playground.cpp
 - Planet: https://www.solarsystemscope.com/textures/
 - Video: https://www.youtube.com/watch?v=VS8wlS9hF8E&list=PLRIWtICgwaX0u7Rf9zkZhLoLuZVfUksDP
 
-
-![alt text](file:///I:/venus.png)
+![venus](https://github.com/user-attachments/assets/8721f260-1f2f-4a8a-ae5a-880ff0a33c29)
 
