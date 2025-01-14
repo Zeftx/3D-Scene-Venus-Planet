@@ -23,8 +23,8 @@ int main() {
     var_x = 10, var_y = 0, var_angle = 0, tilt = 0;
     ispressed = false;
 
-    shaderProgramm = LoadShaders("C:/Users/Alper/source/repos/Mars_Model_CG/resources/SimpleVertexShader.vertexshader",
-        "C:/Users/Alper/source/repos/Mars_Model_CG/resources/SimpleFragmentShader.fragmentshader");
+    shaderProgramm = LoadShaders("./resources/SimpleVertexShader.vertexshader",
+        "./resources/SimpleFragmentShader.fragmentshader");
 
     MatrixIDMV = glGetUniformLocation(shaderProgramm, "MV");
     MatrixID = glGetUniformLocation(shaderProgramm, "MVP");
@@ -113,7 +113,7 @@ bool initializeWindow() {
     window = glfwCreateWindow(1024, 768, "3D Scene Venus", nullptr, nullptr);
     if (window == nullptr) {
         fprintf(stderr,
-            "Failed to open GLFW window. If you have an Intel GPU, they are not 3.3 compatible. Try the 2.1 version of the tutorials.\n");
+            "Failed to open GLFW window.\n");
         getchar();
         glfwTerminate();
         return false;
@@ -190,14 +190,14 @@ bool updateMVPTransformation() {
 }
 
 bool initializeVertexBuffer() {
-    glGetUniformLocation(shaderProgramm, "C:/Users/Alper/source/repos/Mars_Model_CG/resources/myTextureSampler");
+    glGetUniformLocation(shaderProgramm, "./resources/myTextureSampler");
 
     renderingObject = RenderObject();
     renderingObject.InitializeVAO();
     glGenVertexArrays(1, &VertexArrayID);
     glBindVertexArray(VertexArrayID);
 
-    loadOBJ("C:/Users/Alper/source/repos/Mars_Model_CG/resources/Planet.obj", vertices, uvs, normals);
+    loadOBJ("./resources/Planet.obj", vertices, uvs, normals);
 
     vertices.size() * sizeof(glm::vec3);
 
@@ -207,7 +207,7 @@ bool initializeVertexBuffer() {
 
     renderingObject.textureSamplerID = glGetUniformLocation(shaderProgramm, "myTextureSampler");
     std::vector<glm::vec2> uvBufferData = uvs;
-    renderingObject.SetTexture(uvBufferData, "C:/Users/Alper/source/repos/Mars_Model_CG/resources/8k_venus_surface.bmp");
+    renderingObject.SetTexture(uvBufferData, "./resources/8k_venus_surface.bmp");
 
     glGenBuffers(2, vertexBuffer); //generate two buffers, one for the vertices, one for the normals
 
